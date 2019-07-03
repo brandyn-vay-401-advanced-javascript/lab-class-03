@@ -2,7 +2,10 @@
 
 jest.mock('fs');
 
-const reader = require('../../lib/reader.js');
+// Re factor test to run for promises instead of callbacks
+
+// const reader = require('../../lib/reader.js');
+const reader = require('../../lib/reader-promises.js');
 
 describe('File Reader Module', () => {
 
