@@ -12,7 +12,7 @@ describe('File Reader Module', () => {
     // going to throw one in a test, have the expect execute your code as a
     // function so that you can trap it.
     reader(files, (err,data) => {
-      expect(err).toBeDefined();
+      expect(err).toBeUndefined();
       done();
     });
   });
